@@ -1,4 +1,35 @@
 <div align="center">
+██████╗ ██╗███╗   ██╗███████╗████████╗ █████╗ ██████╗  ██████╗ ███╗   ██╗
+██╔══██╗██║████╗  ██║██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██╔═══██╗████╗  ██║
+██████╔╝██║██╔██╗ ██║███████╗   ██║   ███████║██████╔╝██║   ██║██╔██╗ ██║
+██╔══██╗██║██║╚██╗██║╚════██║   ██║   ██╔══██║██╔══██╗██║   ██║██║╚██╗██║
+██████╔╝██║██║ ╚████║███████║   ██║   ██║  ██║██║  ██║╚██████╔╝██║ ╚████║
+╚═════╝ ╚═╝╚═╝  ╚═══╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝
+             Instagram Unfollowers Console Tool
+<img src="./assets/banner-gradient.svg" width="100%">
+  <svg width="100%" height="170" viewBox="0 0 1500 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%">
+      <stop offset="0%" stop-color="#ff9a00"/>
+      <stop offset="25%" stop-color="#ff3d77"/>
+      <stop offset="50%" stop-color="#8134af"/>
+      <stop offset="75%" stop-color="#515bd4"/>
+      <stop offset="100%" stop-color="#2f7afc"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1500" height="300" fill="url(#gradient)" rx="18"/>
+
+  <text x="50%" y="52%" font-size="64" font-family="Segoe UI, sans-serif"
+        font-weight="900" fill="white" text-anchor="middle">
+    INSTAGRAM UNFOLLOWERS
+  </text>
+
+  <text x="50%" y="78%" font-size="28" font-family="Segoe UI, sans-serif"
+        fill="#f8f8f8" text-anchor="middle">
+    A powerful JavaScript Console Tool for scanning & unfollowing safely
+  </text>
+</svg>
 
 <img src="./assets/logo.svg" width="250" />
 
