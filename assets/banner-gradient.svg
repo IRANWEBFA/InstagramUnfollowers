@@ -18,6 +18,6 @@
 
   <text x="50%" y="78%" font-size="28" font-family="Segoe UI, sans-serif"
         fill="#f8f8f8" text-anchor="middle">
-    A powerful JavaScript Console Tool for scanning & unfollowing safely
+    A powerful JavaScript Console Tool for scanning &amp; unfollowing safely
   </text>
 </svg>
