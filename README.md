@@ -2,6 +2,7 @@
 <!-- Banner -->
 <div align="center">
     <img src="https://raw.githubusercontent.com/IRANWEBFA/InstagramUnfollowers/main/assets/banner-gradient.svg" width="100%">
+    <br/>
     <img src="https://raw.githubusercontent.com/IRANWEBFA/InstagramUnfollowers/main/assets/logo.svg" width="200">
 
 </div>
