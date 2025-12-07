@@ -1,186 +1,191 @@
-# Instagram Unfollowers (Console Tool)
+<div align="center">
 
-[English](#english) | [فارسی](#فارسی)
+<img src="./assets/logo.svg" width="250" />
+
+# 🚀 Instagram Unfollowers  
+### ⚡ Console Tool • Safe Unfollow • Full Scanner • UI Overlay
+
+[🌐 English](#english) | [🇮🇷 فارسی](#فارسی)
+
+<br/>
+
+<img src="https://img.shields.io/badge/JavaScript-ES6+-yellow?style=for-the-badge&logo=javascript&logoColor=000" />
+<img src="https://img.shields.io/badge/Runs%20In-DevTools%20Console-blue?style=for-the-badge&logo=google-chrome" />
+<img src="https://img.shields.io/badge/Platform-Instagram-ff0069?style=for-the-badge&logo=instagram" />
+<img src="https://img.shields.io/badge/Status-Stable-brightgreen?style=for-the-badge" />
+<img src="https://img.shields.io/badge/License-MIT-purple?style=for-the-badge" />
+
+<br><br>
+
+</div>
+
+---
+
+# ✨ Features At a Glance
+
+| Feature | Description |
+|--------|-------------|
+| 🔍 **Full Scan** | Fetches *all your followings* from Instagram GraphQL |
+| 🚫 **Detect Non-Followers** | Shows who does **not** follow you back |
+| ✔️ **Safe Unfollow Tool** | Random delays, cooldown cycles, anti-block behavior |
+| 🧩 **Overlay UI** | Buttons, checkboxes, progress bar, live logs |
+| 🖼️ **Profile Info** | Username, Full Name, Avatar, Verified, Private |
+| 🔤 **Alphabetical Groups** | Groups users by A–Z |
+| 📋 **Copy Usernames** | Export non-followers list |
+| 🔧 **Developer-Friendly** | Clean source + minified version available |
 
 ---
 
 # English
 
-## Overview
+## 📌 Overview
 
-**Instagram Unfollowers** is a JavaScript tool that runs inside your **browser DevTools Console** on the Instagram website.
+**Instagram Unfollowers** is a JavaScript-based tool that runs entirely inside your **browser DevTools Console**.  
+It scans your followings and identifies accounts that do *not* follow you back, with optional one-click unfollowing.
 
-It allows you to:
-
-- Scan your **followings list**
-- Detect users who **do not follow you back**
-- Select accounts to unfollow (or select all)
-- Unfollow them safely with delays
-- Copy non-followers usernames to clipboard
-
->⚠️ **Disclaimer:**  
->This tool is for educational purposes only and is not affiliated with Instagram.  
->Excessive usage may cause temporary blocks. Use at your own risk.
+> ⚠️ *Note:* This tool is not affiliated with Instagram.  
+> Use responsibly. Too many actions can cause temporary blocks.
 
 ---
 
-## Project Structure
+## 📁 Project Structure
 
 ```
 InstagramUnfollowers/
 ├── src/
-│   └── instagram-unfollowers.js        (Clean readable source)
+│   └── instagram-unfollowers.js        (Editable full source code)
 ├── dist/
-│   └── instagram-unfollowers.min.js    (Minified script for console)
+│   └── instagram-unfollowers.min.js    (Minified for console usage)
 ├── assets/
-│   └── logo.svg                         (Project logo)
+│   └── logo.svg                        (Project logo)
 ├── LICENSE
 └── README.md
 ```
 
-- `src/instagram-unfollowers.js` → The editable, clean source code  
-- `dist/instagram-unfollowers.min.js` → The version you copy into Instagram Console  
+---
+
+# 🚀 How to Use
+
+## **Step 1 – Open Instagram**
+
+Go to:
+
+```
+https://www.instagram.com/
+```
+
+Open **your profile page**.
 
 ---
 
-## How to Use
+## **Step 2 – Open Developer Console**
 
-### 1. Open Instagram
-
-1. Go to the site:
-
-   ```
-   https://www.instagram.com/
-   ```
-
-2. Login and open **your profile page**.
-
----
-
-### 2. Open DevTools Console
-
-- **Windows/Linux:** `F12` or `Ctrl + Shift + I`  
-- **Mac:** `Cmd + Option + I`
+| System | Shortcut |
+|--------|----------|
+| 🪟 Windows / Linux | `F12` or `Ctrl + Shift + I` |
+| 🍏 macOS | `Cmd + Option + I` |
 
 Then open the **Console** tab.
 
 ---
 
-### 3. Run the Script
+## **Step 3 – Run the Tool**
 
 1. Open the file:
 
-   ```
-   dist/instagram-unfollowers.min.js
-   ```
+```
+dist/instagram-unfollowers.min.js
+```
 
-2. Copy **all** of its content  
-3. Paste it in the Instagram **Console**  
+2. Copy the script  
+3. Paste into the browser **Console**  
 4. Press **Enter**
 
-A UI overlay will appear on the page.
+A custom UI will appear.
 
 ---
 
-### 4. Scan Followings
+## **Step 4 – Scan Followings**
 
-Inside the overlay:
+Click the **RUN** button.
 
-- Click **RUN**
-- Wait until:
-  - Progress reaches **100%**
-  - Status shows **DONE**
+The scanner will:
 
-You will see:
-
-- Number of non-followers
-- Accounts sorted alphabetically (A, B, C…)
-- Avatar, username, full name
-- Verified/Private indicators
+- Fetch your followings via GraphQL API  
+- Filter users who don’t follow back  
+- Display data live while scanning  
+- Show progress percentage  
+- Organize accounts alphabetically  
 
 ---
 
-### 5. Unfollow Users
+## **Step 5 – Unfollow Non-Followers**
 
-- Select accounts via checkboxes  
-- OR use **Select All**
+- Use checkboxes to select users  
+- Use **Select All** to bulk-select  
 - Click **UNFOLLOW**
 
-The tool will:
+The tool performs:
 
-- Unfollow accounts one by one
-- Show logs like:
-
-  ```
-  Unfollowed username [3/20]
-  ```
-
-- Add random delays between actions  
-- Occasionally sleep longer to prevent blocks  
+- Random delays per unfollow  
+- Cooldown after every few requests  
+- Live log messages  
+- Scroll-to-bottom auto updates  
+- Progress bar for unfollowing  
 
 ---
 
-## Features
+# 🛠 Development
 
-- Fully client-side (no server, no login sharing)
-- Overlay UI on top of Instagram
-- Verified filter
-- Private account indicator
-- Alphabetical grouping
-- Copy usernames to clipboard
-- Progress bars for scanning + unfollowing
-- Error handling and console logs
+Want to edit or extend the tool?
 
----
+### ✔ Edit the clean source:
+```
+src/instagram-unfollowers.js
+```
 
-## Development
+### ✔ Minify it again  
+(using any JS minifier)
 
-To modify the tool:
-
-1. Edit the source:
-
-   ```
-   src/instagram-unfollowers.js
-   ```
-
-2. Minify the file (using any online JS minifier)
-3. Replace:
-
-   ```
-   dist/instagram-unfollowers.min.js
-   ```
+### ✔ Replace console version:
+```
+dist/instagram-unfollowers.min.js
+```
 
 ---
 
-## License
+# 📄 License
 
-This project is under the **MIT License**.  
-See the `LICENSE` file for more details.
-
----
-
-# فارسی
-
-## معرفی
-
-**Instagram Unfollowers** یک اسکریپت جاوااسکریپت است که داخل **کنسول مرورگر (DevTools Console)** روی سایت اینستاگرام اجرا می‌شود.
-
-قابلیت‌های ابزار:
-
-- اسکن لیست فالوئینگ‌ها  
-- پیدا کردن کسانی که شما را فالو ندارند  
-- انتخاب تکی یا گروهی برای آنفالو  
-- انجام آنفالو با تأخیرهای امن  
-- کپی‌کردن لیست یوزرنیم‌ها  
-- نمایش Verified و Private  
-
->⚠️ **هشدار:**  
->این ابزار هیچ وابستگی رسمی به اینستاگرام ندارد.  
->استفاده‌ی زیاد می‌تواند باعث بلاک موقت شود. مسئولیت استفاده با کاربر است.
+This project is licensed under the **MIT License**.  
+See the `LICENSE` file for details.
 
 ---
 
-## ساختار پروژه
+<br><br>
+
+# 🇮🇷 فارسی
+
+## 📌 معرفی
+
+**Instagram Unfollowers** یک ابزار جاوااسکریپتی است که داخل **کنسول مرورگر (DevTools Console)** اجرا می‌شود.
+
+این ابزار:
+
+- فالوئینگ‌های شما را کامل اسکن می‌کند  
+- کسانی که شما را فالو ندارند پیدا می‌کند  
+- امکان انتخاب تکی یا گروهی دارد  
+- آنفالو را با تأخیرهای ایمن انجام می‌دهد  
+- لیست یوزرنیم‌ها را برای‌تان کپی می‌کند  
+- Avatar / Username / Verified / Private را نمایش می‌دهد  
+- لیست را بر اساس حروف مرتب می‌کند  
+
+> ⚠️ توجه  
+> این ابزار هیچ وابستگی به اینستاگرام ندارد.  
+> استفاده زیاد می‌تواند باعث بلاک موقت شود.
+
+---
+
+# 📁 ساختار پروژه
 
 ```
 InstagramUnfollowers/
@@ -196,98 +201,86 @@ InstagramUnfollowers/
 
 ---
 
-## آموزش استفاده
+# 🚀 آموزش استفاده
 
-### ۱. ورود به اینستاگرام
+## **مرحله ۱ – ورود به اینستاگرام**
 
-1. وارد سایت شوید:
+به آدرس زیر بروید:
 
-   ```
-   https://www.instagram.com/
-   ```
+```
+https://www.instagram.com/
+```
 
-2. لاگین کرده و وارد **پروفایل خود شوید**
-
----
-
-### ۲. باز کردن کنسول
-
-- ویندوز/لینوکس: `F12` یا `Ctrl + Shift + I`  
-- مک: `Cmd + Option + I`
-
-سپس وارد تب **Console** شوید.
+وارد اکانت شوید → وارد **پروفایل خود** شوید.
 
 ---
 
-### ۳. اجرای اسکریپت
+## **مرحله ۲ – باز کردن کنسول**
+
+| سیستم | میانبر |
+|--------|---------|
+| ویندوز / لینوکس | `F12` یا `Ctrl + Shift + I` |
+| مک | `Cmd + Option + I` |
+
+به تب **Console** بروید.
+
+---
+
+## **مرحله ۳ – اجرای اسکریپت**
 
 1. فایل زیر را باز کنید:
 
-   ```
-   dist/instagram-unfollowers.min.js
-   ```
+```
+dist/instagram-unfollowers.min.js
+```
 
 2. کل کد را کپی کنید  
-3. در **Console** پیست کنید  
-4. Enter بزنید
+3. داخل Console پیست کنید  
+4. Enter بزنید  
 
-یک پنل (UI) روی سایت ظاهر می‌شود.
-
----
-
-### ۴. اسکن فالوئینگ‌ها
-
-- روی **RUN** کلیک کنید  
-- صبر کنید تا درصد به **۱۰۰٪** برسد  
-- وضعیت **DONE** شود  
-
-در حین اسکن:
-
-- تعداد Non-follower  
-- لیست مرتب‌شده بر اساس حروف  
-- عکس پروفایل + یوزرنیم  
-- Private / Verified  
-
-نشان داده می‌شود.
+یک UI روی صفحه ظاهر می‌شود.
 
 ---
 
-### ۵. آنفالو کردن
+## **مرحله ۴ – اسکن**
 
-- هر اکانت را تیک بزنید  
-- یا از **Select All** استفاده کنید  
-- دکمه **UNFOLLOW** را بزنید  
+روی **RUN** کلیک کنید.
 
 اسکریپت:
 
-- تک‌تک آنفالو می‌کند  
-- وضعیت را نمایش می‌دهد  
-- بین درخواست‌ها تأخیر می‌گذارد  
-- هر چند درخواست یک‌بار بیشتر صبر می‌کند  
+- فالوئینگ‌ها را از API می‌گیرد  
+- Non-followerها را جدا می‌کند  
+- مرتب‌سازی الفبایی انجام می‌دهد  
+- درصد پیشرفت را نمایش می‌دهد  
 
 ---
 
-## امکانات
+## **مرحله ۵ – آنفالو**
 
-- اجرا فقط در مرورگر شما  
-- بدون نیاز به هیچ افزونه یا سرور  
-- کاملاً امن از نظر login  
-- مرتب‌سازی الفبایی  
-- کپی لیست یوزرنیم‌ها  
-- نمایش پیشرفت  
-- نمایش ارورها  
+- هر کاربر را تیک بزنید  
+- یا Select All  
+- روی **UNFOLLOW** کلیک کنید  
+
+اسکریپت:
+
+- با تأخیر امن آنفالو می‌کند  
+- هر چند آنفالو یکبار بیشتر صبر می‌کند  
+- Log زنده می‌نویسد  
+- Auto-Scroll دارد  
 
 ---
 
-## توسعه
+# 🛠 توسعه
 
-برای تغییر ابزار:
+اگر قصد افزودن قابلیت دارید:
+
+- سورس را ویرایش کنید:
 
 ```
 src/instagram-unfollowers.js
 ```
 
-برای نسخه کنسولی (مینیفای):
+- سپس نسخه مینیفای را جایگزین کنید:
 
 ```
 dist/instagram-unfollowers.min.js
@@ -295,7 +288,9 @@ dist/instagram-unfollowers.min.js
 
 ---
 
-## مجوز
+# ⚖️ مجوز
 
-این پروژه تحت مجوز **MIT** منتشر شده است.  
-فایل `LICENSE` را ببینید.
+این پروژه تحت مجوز **MIT** منتشر شده است.
+
+با احترام ❤️  
+تیم IRANHACKERS
